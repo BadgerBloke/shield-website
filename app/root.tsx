@@ -65,7 +65,7 @@ export const meta: MetaFunction = () => {
         },
         {
             property: 'og:image',
-            content: '/og-image.png',
+            content: `${CLIENT.host}/og-image.png`,
         },
         {
             property: 'og:image:alt',
@@ -119,7 +119,7 @@ export const meta: MetaFunction = () => {
         },
         {
             name: 'twitter:image',
-            content: '/og-image.png',
+            content: `${CLIENT.host}/og-image.png`,
         },
         {
             name: 'twitter:image:alt',
