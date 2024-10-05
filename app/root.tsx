@@ -126,7 +126,7 @@ export function App() {
                 <PreventFlashOnWrongTheme ssrTheme={Boolean(data.theme)} />
                 <Links />
             </head>
-            <body className="flex flex-col min-h-svh antialiased bg-background-base">
+            <body className="flex flex-col min-h-svh antialiased bg-background-base overflow-x-hidden">
                 <Outlet />
                 <ScrollRestoration />
                 <Scripts />
