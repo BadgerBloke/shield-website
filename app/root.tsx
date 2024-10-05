@@ -44,11 +44,11 @@ export const meta: MetaFunction = () => {
             content: CLIENT.description,
         },
         {
-            itemprop: 'name',
+            itemProp: 'name',
             content: CLIENT.name,
         },
         {
-            'http-equiv': 'Content-Type',
+            httpEquiv: 'Content-Type',
             content: 'text/html; charset=utf-8',
         },
         {

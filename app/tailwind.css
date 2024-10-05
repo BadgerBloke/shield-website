@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,21 +9,21 @@
     --gradient: linear-gradient(to top left, #fc4a1a, #f7b733);
     --background: 240 10% 3.9%;
     --background-base: 240 2% 8%;
-    --foreground: 0 0% 98%;
+    --foreground: 18 100% 50%;
     --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card-foreground: 18 100% 50%;
     --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --popover-foreground: 18 100% 50%;
+    --primary: 18 100% 50%;
+    --primary-foreground: 0 0% 100%;
     --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary-foreground: 18 100% 50%;
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
     --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent-foreground: 18 100% 50%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 18 100% 50%;
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;

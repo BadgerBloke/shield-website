@@ -13,6 +13,9 @@ const config = {
             },
         },
         extend: {
+            fontFamily: {
+                'roboto-slab': ['Roboto Slab', 'serif'],
+            },
             minHeight: {
                 screenLessNav: 'calc(100dvh - 60px)',
                 dvh: '100dvh',
@@ -79,7 +82,7 @@ const config = {
             },
         },
     },
-    plugins: [require('tailwindcss-animate')],
+    plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
 } satisfies Config;
 
 export default config;
