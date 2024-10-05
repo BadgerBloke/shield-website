@@ -30,38 +30,54 @@ export const links: LinksFunction = () => {
 
 export const meta: MetaFunction = () => {
     return [
+        // Basic Meta Tags
         { title: CLIENT.name },
+        { description: CLIENT.description },
+        {
+            name: 'viewport',
+            content: 'width=device-width, initial-scale=1',
+        },
+        {
+            name: 'robots',
+            content: 'index, follow',
+        },
+        {
+            name: 'language',
+            content: 'English',
+        },
+        {
+            name: 'author',
+            content: 'Mukesh Singh',
+        },
+        {
+            name: 'keywords',
+            content: CLIENT.keywords, // Ensure you have this defined in your CLIENT object
+        },
+
+        // Open Graph Tags
         {
             property: 'og:title',
             content: CLIENT.name,
-        },
-        {
-            name: 'description',
-            content: CLIENT.description,
         },
         {
             property: 'og:description',
             content: CLIENT.description,
         },
         {
-            itemProp: 'name',
-            content: CLIENT.name,
-        },
-        {
-            httpEquiv: 'Content-Type',
-            content: 'text/html; charset=utf-8',
-        },
-        {
-            property: 'og:site_name',
-            content: CLIENT.name,
-        },
-        {
-            content: 'width=device-width, initial-scale=1',
-            name: 'viewport',
-        },
-        {
             property: 'og:image',
             content: '/og-image.png',
+        },
+        {
+            property: 'og:image:alt',
+            content: `${CLIENT.name} preview image`,
+        },
+        {
+            property: 'og:image:width',
+            content: '1200', // Adjust based on your actual image dimensions
+        },
+        {
+            property: 'og:image:height',
+            content: '630', // Adjust based on your actual image dimensions
         },
         {
             property: 'og:type',
@@ -69,19 +85,29 @@ export const meta: MetaFunction = () => {
         },
         {
             property: 'og:url',
-            content: CLIENT.host,
+            content: 'https://shield.rs',
         },
         {
             property: 'og:locale',
             content: 'en_US',
         },
         {
+            property: 'og:site_name',
+            content: CLIENT.name,
+        },
+
+        // Twitter Card Tags
+        {
             name: 'twitter:card',
-            content: 'summary',
+            content: 'summary_large_image',
         },
         {
             name: 'twitter:site',
             content: '@shield_auth',
+        },
+        {
+            name: 'twitter:creator',
+            content: '@MKSingh_Dev',
         },
         {
             name: 'twitter:title',
@@ -94,6 +120,37 @@ export const meta: MetaFunction = () => {
         {
             name: 'twitter:image',
             content: '/og-image.png',
+        },
+        {
+            name: 'twitter:image:alt',
+            content: `${CLIENT.name} preview image`,
+        },
+
+        // Apple Mobile Web App Meta Tags (if you're making a PWA)
+        {
+            name: 'apple-mobile-web-app-capable',
+            content: 'yes',
+        },
+        {
+            name: 'apple-mobile-web-app-status-bar-style',
+            content: 'black-translucent',
+        },
+        {
+            name: 'apple-mobile-web-app-title',
+            content: CLIENT.name,
+        },
+
+        // Theme Color for browsers
+        {
+            name: 'theme-color',
+            content: '#FF4C00',
+        },
+
+        // Canonical URL
+        {
+            tagName: 'link',
+            rel: 'canonical',
+            href: 'https://shield.rs',
         },
     ];
 };
